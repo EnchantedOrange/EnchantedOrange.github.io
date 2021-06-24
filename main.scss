@@ -3,7 +3,9 @@ $shadow-color: #1b8a72;
 $hover-color: #23ad8f;
 $text-color: #10493d;
 
-*, :before, :after {
+*,
+:before,
+:after {
   box-sizing: border-box;
 }
 
@@ -43,10 +45,10 @@ body {
     li {
       text-align: center;
       border-radius: 5px;
-  
+
       &:hover {
         background-color: $hover-color;
-        transition: background-color .2s;
+        transition: background-color 0.2s;
       }
 
       a {
@@ -60,7 +62,7 @@ body {
         display: block;
       }
     }
-  
+
     &-visible {
       display: block;
     }
@@ -77,8 +79,8 @@ body {
   a {
     max-width: 50px;
     max-height: 50px;
-    margin-left: .5rem;
-    transition: transform .2s;
+    margin-left: 0.5rem;
+    transition: transform 0.2s;
 
     &:first-child {
       margin-left: 0;
@@ -106,8 +108,8 @@ main {
 
   article {
     border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
-    background-color: rgba(155, 155, 155, .8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(155, 155, 155, 0.8);
     max-width: 1000px;
     margin: 0 auto 2rem;
 
@@ -125,13 +127,13 @@ main {
     }
 
     header {
-      box-shadow: 0 2px 12px -5px rgba(0, 0, 0, .5);
+      box-shadow: 0 2px 12px -5px rgba(0, 0, 0, 0.5);
       font-size: 1.3rem;
-      transition: background-color .3s;
+      transition: background-color 0.3s;
       border-radius: 5px;
 
       &:hover {
-        background-color: rgba(100, 100, 100, .8);
+        background-color: rgba(100, 100, 100, 0.8);
       }
 
       a {
@@ -199,14 +201,13 @@ main {
     cursor: pointer;
     position: relative;
   }
-  
+
   .green {
     background-color: #48b847;
     box-shadow: 0 5px #31792f;
     cursor: pointer;
     position: relative;
   }
-
 
   .pressed-color-button {
     box-shadow: none;
@@ -232,21 +233,20 @@ main {
 
   div {
     border-radius: 5px;
-    padding:  5px 10px;
+    padding: 5px 10px;
     margin: 5px;
-    transition: background-color .2s;
+    transition: box-shadow 0.3s;
     background-color: $main-color;
-    transition: box-shadow .3s;
 
     &:nth-of-type(odd) {
       word-break: break-all;
     }
 
-    &:nth-of-type(4n+3) {
+    &:nth-of-type(4n + 3) {
       background: $hover-color;
     }
 
-    &:nth-of-type(4n+4) {
+    &:nth-of-type(4n + 4) {
       background: $hover-color;
     }
 

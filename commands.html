@@ -1,101 +1,133 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
     <title>Main page</title>
-</head>
-<body>
-<div class="nav">
-    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="#136150"><path d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z"></path></svg>
-    <ul class="menu">
+  </head>
+  <body>
+    <div class="nav">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="512"
+        height="512"
+        viewBox="0 0 512 512"
+        fill="#136150"
+      >
+        <path
+          d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z"
+        ></path>
+      </svg>
+      <ul class="menu">
         <li>
-            <a href="index.html">Главная страница</a>
+          <a href="index.html">Главная страница</a>
         </li>
         <li>
-            <a href="commands.html">Команды бота</a>
+          <a href="commands.html">Команды бота</a>
         </li>
         <li>
-            <a href="win10web/">Windows 10 web</a>
+          <a href="win10web/">Windows 10 web</a>
         </li>
-    </ul>
-</div>
-<h1 class="page-header">Команды бота</h1>
-<div class="color-description">
-    <div class="red">Обязательно</div>
-    <div class="green">Опционально</div>
-</div>
-<div class="table">
-    <h1 class="table-header">Для всех пользователей</h1>
-    <div>!bc</div>
-    <div>Выбрать новое имя для сэра Бенедикта Камбербэтча</div>
-    <div>!снежок <span class="optional">имя_пользователя</span></div>
-    <div>Бросить снежок в случайного пользователя из чата, либо пользователя, указанного после команды</div>
-    <div>!рим <span class="required">1-3999</span></div>
-    <div>Перевод арабских чисел в римские</div>
-    <div>!кпд</div>
-    <div>Количество людей в чате делённое на количество фолловеров в процентах</div>
-    <div>!punto <span class="optional">ghbdtn</span></div>
-    <div>Перевод из английской(латинской) раскладки в русскую(кириллическую) и наоборот</div>
-    <div>!wasted <span class="optional">fuck you cabron</span></div>
-    <div>Потраченный переводчик с английского на русский</div>
-    <div>!реверс <span class="optional">тевирп</span></div>
-    <div>Возвращает "отзеркаленный" текст, введённый после команды</div>
-    <div>!count <span class="optional">имя_пользователя</span></div>
-    <div>Возвращает количество написанных Вами сообщений, либо количество сообщений, написанных пользователем, указанным после команды</div>
-    <div>!top</div>
-    <div>Возвращает топ 5 пользователей по количеству написанных сообщений</div>
-    <div>!сэм <span class="optional">sample text</span></div>
-    <div>Попробуй найти письмо</div>
-    <div>!slap <span class="optional">пользователь</span></div>
-    <div>Издевайся над пользователями</div>
-    <div>!соурплс</div>
-    <div>Танец в чате</div>
-    <div>!help или !команды</div>
-    <div>Список команд бота (тот самый, в котором Вы сейчас находитесь)</div>
-    <div>!дуэль <span class="required">пользователь</span></div>
-    <div>Вызвать пользователя на дуэль</div>
-    <div>!принять</div>
-    <div>Принять дуэль</div>
-    <div>!отказ</div>
-    <div>Отказаться от дуэли</div>
-    <div>!throw</div>
-    <div>Бросить кости</div>
-</div>
-<div class="table">
-    <h1 class="table-header">Для стримера</h1>
-    <div>!скажи <span class="required">привет</span></div>
-    <div>Возвращает текст, написанный после команды</div>
-    <div>!опрос <span class="required">вариант_1 вариант_2 вариант_N</span></div>
-    <div>Создаёт опрос с вариантами, указанными через пробел после названия</div>
-    <div>!результат</div>
-    <div>Получение результатов опроса</div>
-</div>
-<div class="table">
-    <h1 class="table-header">Для создателя</h1>
-    <div>!скажив <span class="required">канал привет</span></div>
-    <div>Написать текст в указанный канал</div>
-    <div>!host <span class="required">канал</span></div>
-    <div>Заставить бота захостить указанный канал</div>
-    <div>!delete <span class="required">канал</span></div>
-    <div>Удалить таблицу канала из базы данных</div>
-    <div>!rename <span class="required">старое_название новое_название</span></div>
-    <div>Переименовать канал в базе данных</div>
-    <div>!renameuser <span class="required">старое_имя новое_имя</span></div>
-    <div>Переименовать пользователя</div>
-    <div>!clear</div>
-    <div>Очистка базы данных</div>
-    <div>!msgv <span class="required">пользователь количество</span></div>
-    <div>Изменить количество сообщений у пользователя. "+1" добавляет сообщение, "-1" отнимает</div>
-    <div>!deleteuser <span class="required">пользователь</span></div>
-    <div>Удалить пользователя из базы данных</div>
-    <div>!123</div>
-    <div>Промотреть упоминания</div>
-    <div>!off</div>
-    <div>Выключить бота</div>
-</div>
-<script src="script.js"></script>
-</body>
+      </ul>
+    </div>
+    <h1 class="page-header">Команды бота</h1>
+    <div class="color-description">
+      <div class="red">Обязательно</div>
+      <div class="green">Опционально</div>
+    </div>
+    <div class="table">
+      <h1 class="table-header">Для всех пользователей</h1>
+      <div>!bc</div>
+      <div>Выбрать новое имя для сэра Бенедикта Камбербэтча</div>
+      <div>!снежок <span class="optional">имя_пользователя</span></div>
+      <div>
+        Бросить снежок в случайного пользователя из чата, либо пользователя,
+        указанного после команды
+      </div>
+      <div>!рим <span class="required">1-3999</span></div>
+      <div>Перевод арабских чисел в римские</div>
+      <div>!кпд</div>
+      <div>
+        Количество людей в чате делённое на количество фолловеров в процентах
+      </div>
+      <div>!punto <span class="optional">ghbdtn</span></div>
+      <div>
+        Перевод из английской(латинской) раскладки в русскую(кириллическую) и
+        наоборот
+      </div>
+      <div>!wasted <span class="optional">fudge you cabron</span></div>
+      <div>Потраченный переводчик с английского на русский</div>
+      <div>!реверс <span class="optional">тевирп</span></div>
+      <div>Возвращает "отзеркаленный" текст, введённый после команды</div>
+      <div>!count <span class="optional">имя_пользователя</span></div>
+      <div>
+        Возвращает количество написанных Вами сообщений, либо количество
+        сообщений, написанных пользователем, указанным после команды
+      </div>
+      <div>!top</div>
+      <div>
+        Возвращает топ 5 пользователей по количеству написанных сообщений
+      </div>
+      <div>!сэм <span class="optional">sample text</span></div>
+      <div>Попробуй найти письмо</div>
+      <div>!slap <span class="optional">пользователь</span></div>
+      <div>Издевайся над пользователями</div>
+      <div>!соурплс</div>
+      <div>Танец в чате</div>
+      <div>!help или !команды</div>
+      <div>Список команд бота (тот самый, в котором Вы сейчас находитесь)</div>
+      <div>!дуэль <span class="required">пользователь</span></div>
+      <div>Вызвать пользователя на дуэль</div>
+      <div>!принять</div>
+      <div>Принять дуэль</div>
+      <div>!отказ</div>
+      <div>Отказаться от дуэли</div>
+      <div>!throw</div>
+      <div>Бросить кости</div>
+    </div>
+    <div class="table">
+      <h1 class="table-header">Для стримера</h1>
+      <div>!скажи <span class="required">привет</span></div>
+      <div>Возвращает текст, написанный после команды</div>
+      <div>
+        !опрос <span class="required">вариант_1 вариант_2 вариант_N</span>
+      </div>
+      <div>
+        Создаёт опрос с вариантами, указанными через пробел после названия
+      </div>
+      <div>!результат</div>
+      <div>Получение результатов опроса</div>
+    </div>
+    <div class="table">
+      <h1 class="table-header">Для создателя</h1>
+      <div>!скажив <span class="required">канал привет</span></div>
+      <div>Написать текст в указанный канал</div>
+      <div>!host <span class="required">канал</span></div>
+      <div>Заставить бота захостить указанный канал</div>
+      <div>!delete <span class="required">канал</span></div>
+      <div>Удалить таблицу канала из базы данных</div>
+      <div>
+        !rename <span class="required">старое_название новое_название</span>
+      </div>
+      <div>Переименовать канал в базе данных</div>
+      <div>!renameuser <span class="required">старое_имя новое_имя</span></div>
+      <div>Переименовать пользователя</div>
+      <div>!clear</div>
+      <div>Очистка базы данных</div>
+      <div>!msgv <span class="required">пользователь количество</span></div>
+      <div>
+        Изменить количество сообщений у пользователя. "+1" добавляет сообщение,
+        "-1" отнимает
+      </div>
+      <div>!deleteuser <span class="required">пользователь</span></div>
+      <div>Удалить пользователя из базы данных</div>
+      <div>!123</div>
+      <div>Промотреть упоминания</div>
+      <div>!off</div>
+      <div>Выключить бота</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
